@@ -33,5 +33,5 @@ class LoanResource(Resource):
 
 
 def configure_routes(api):
-    api.add_resource(LoanIdResource, "/loan/id")
-    api.add_resource(LoanResource, "/loan/<int:id>")
+    api.add_resource(LoanIdResource, "/api/loan/id")
+    api.add_resource(LoanResource, "/api/loan/<int:id>")
