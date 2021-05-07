@@ -4,8 +4,8 @@ import os
 class Config:
     DEBUG = False
     CSRF_ENABLED = True
-    SECRET = os.getenv('SECRET')
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
+    #SECRET = os.getenv('SECRET')
+    #SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
@@ -13,6 +13,8 @@ class ProdConfig(Config):
     DEBUG = False
     TESTING = False
     HOST="0.0.0.0"
+    SECRET="springboard"
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://admin:admin@localhost/loan'
 
 
 class DevConfig(Config):
