@@ -12,6 +12,7 @@ class Config:
 class ProdConfig(Config):
     DEBUG = False
     TESTING = False
+    HOST="0.0.0.0"
 
 
 class DevConfig(Config):
