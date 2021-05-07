@@ -1,1 +1,1 @@
-export const URL = "http://127.0.0.1:5000/";
+export const URL = "https://ec2-54-237-96-6.compute-1.amazonaws.com/api/";
